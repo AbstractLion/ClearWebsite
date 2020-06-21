@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+	* {
+		font-family: Lato, sans-serif;
+		box-sizing: border-box;
+	}
+
+	body {
+		background-image: url(background.jpg);
+		padding: 10px 40px;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.tabs {
+		display: flex;
+		flex-direction: row;
+		font-family: Poppins, sans-serif;
+		margin: 0 40px;
+	}
+
+	.tab {
+		margin: 0 5px;
+		padding: 5px;
+		font-family: Poppins, sans-serif;
+		position: relative;
+	}
+
+	.tab.active::after {
+		width: 100%;
+	}
+
+	.tab::after {
+		content: '';
+		width: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 3px;
+		background-color: lightblue;
+		transition: width 0.3s;
+	}
+
+	.tab:hover {
+		cursor: pointer;
+	}
+
+	.tab:hover::after {
+		width: 100%;
+	}
+
+	.jumbotron {
+		height: 400px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin: 20px 60px;
+	}
+
+	.slogan-container {
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex: 1;
+	}
+
+	.description {
+		font-size: 20px;
+		margin-top: 15px;
+		width: 65%;
+	}
+
+	.image-container {
+		display: flex;
+		flex: 1;
+	}
+
+	.slogan {
+		font-family: Poppins, sans-serif;
+		font-weight: bold;
+		font-size: 60px;
+		line-height: 1.2em;
+	}
+
+	.app-buttons {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.app-features {
+		display: flex;
+		margin: 0 20px;
+		justify-content: space-around;
+	}
+
+	.app-feature {
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		margin: 20px;
+		padding: 20px;
+		flex: 1;
+	}
+
+	.feature-name {
+		font-weight: 900;
+		padding-bottom: 10px;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.feature-description {
+		line-height: 1.5em;
+	}
+	</style>
+	<title>Title</title>
+</head>
+<body>
+	<div class="content">
+		<div class="nav">
+			<div class="logo"></div>
+			<div class="tabs">
+				<div class="tab active">Home</div>
+				<div class="tab">Support</div>
+				<div class="tab">Contact</div>
+			</div>
+		</div>
+		<div class="jumbotron">
+			<div class="slogan-container">
+				<div class="slogan">Acquire a clear headspace.</div>
+				<div class="description">
+					Clear is an app that uses photos to analyze your mood and provides
+					relevant tips on improving your mental health.
+				</div>
+				<div class="app-buttons">
+				</div>
+			</div>
+			<div class="image-container">Hi</div>
+		</div>
+		<div class="app-features">
+			<div class="app-feature">
+				<div class="feature-name">Quick and Simple to Use</div>
+				<div class="feature-description">
+					No need to fill out logs or answer a ton of questions each day.
+					All Clear needs is a daily image, and over a few days, you will be able
+					to see an analysis report based on the analyses of these images.
+				</div>
+			</div>
+			<div class="app-feature">
+				<div class="feature-name">
+					Recommends What's Most Effective for You
+				</div>
+				<div class="feature-description">
+					There's no one solution to a poor mental health. Clear learns from
+					your results and if it detects that a certain recommendation isn't
+					too effective for you, it will provide other alternatives until it
+					finds one that helps you the most.
+				</div>
+			</div>
+			<div class="app-feature">
+				<div class="feature-name">
+					Packed with Motivational Features
+				</div>
+				<div class="feature-description">
+					Mental health can sometimes feel boring and unnecessary, so Clear
+					provides features that make it easier to keep up with your mental
+					health.
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

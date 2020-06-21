@@ -93,6 +93,33 @@
 		max-width: 500px;
 	}
 
+	.app-buttons {
+		margin-top: 20px;
+	}
+
+	.devpost {
+		height: 50px;
+		margin-right: 20px;
+		opacity: 1;
+		transition: opacity .2s;
+	}
+
+	.devpost:hover {
+		cursor: pointer;
+		opacity: 0.5;
+	}
+
+	.expo {
+		height: 50px;
+		opacity: 1;
+		transition: opacity .2s;
+	}
+
+	.expo:hover {
+		cursor: pointer;
+		opacity: 0.5;
+	}
+
 	.image-container > img {
 		height: 500px;
 	}
@@ -161,7 +188,7 @@
 	<div class="content">
 		<div class="nav">
 			<div class="logo-container">
-				<img src="icon.png" />
+				<img src="icon.png" alt="Clear Logo" />
 				<span class="logo-title">Clear</span>
 			</div>
 			<div class="tabs">
@@ -178,11 +205,17 @@
 					relevant tips on improving your mental health.
 				</div>
 				<div class="app-buttons">
-
+					<a href="https://devpost.com/software/clear-qp2bs9">
+						<img class="devpost" src="devpost.png"
+								 alt="View on Devpost button" />
+					</a>
+					<a href='#'>
+						<img class="expo" src="expo.png" alt="View on Expo Button" />
+					</a>
 				</div>
 			</div>
 			<div class="image-container">
-				<img src="phone.png" />
+				<img src="phone.png" alt="Clear running on iPhone" />
 			</div>
 		</div>
 		<div class="app-features">

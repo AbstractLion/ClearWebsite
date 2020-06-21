@@ -11,7 +11,6 @@
 	}
 
 	body {
-		background-image: url(background.jpg);
 		padding: 10px 40px;
 	}
 
@@ -51,6 +50,7 @@
 		bottom: 0;
 		left: 0;
 		height: 3px;
+		margin-bottom: 10px;
 		background-color: lightblue;
 		transition: width 0.3s;
 	}
@@ -64,20 +64,21 @@
 	}
 
 	.jumbotron {
-		height: 400px;
+		height: 600px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
+		width: 100%;
 		align-items: center;
 		margin: 20px 60px;
 	}
 
 	.slogan-container {
 		height: 300px;
+		max-width: 500px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		flex: 1;
 	}
 
 	.description {
@@ -88,7 +89,33 @@
 
 	.image-container {
 		display: flex;
-		flex: 1;
+		min-width: 400px;
+		max-width: 500px;
+	}
+
+	.image-container > img {
+		height: 500px;
+	}
+
+	.logo-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo-container:hover {
+		cursor: pointer;
+	}
+
+	.logo-container > img {
+		height: 50px;
+		width: 50px;
+	}
+
+	.logo-title {
+		font-size: 20px;
+		font-family: Poppins, sans-serif;
+		font-weight: bold;
+		letter-spacing: 1px;
 	}
 
 	.slogan {
@@ -133,7 +160,10 @@
 <body>
 	<div class="content">
 		<div class="nav">
-			<div class="logo"></div>
+			<div class="logo-container">
+				<img src="icon.png" />
+				<span class="logo-title">Clear</span>
+			</div>
 			<div class="tabs">
 				<div class="tab active">Home</div>
 				<div class="tab">Support</div>
@@ -148,9 +178,12 @@
 					relevant tips on improving your mental health.
 				</div>
 				<div class="app-buttons">
+
 				</div>
 			</div>
-			<div class="image-container">Hi</div>
+			<div class="image-container">
+				<img src="phone.png" />
+			</div>
 		</div>
 		<div class="app-features">
 			<div class="app-feature">
